@@ -20,7 +20,7 @@ float ler_sensor() {
 void loop() {
   float leitura = ler_sensor();
   int NTU;
-
+  
   if(leitura < 2.5) NTU = 3000;
   else if(leitura > 4.2) NTU = 0;
   else NTU = -1120.4 * pow(leitura, 2) + 5742.3 * leitura - 4353.8;
